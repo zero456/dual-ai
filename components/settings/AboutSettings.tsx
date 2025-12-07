@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { Github, Star, Info, ExternalLink, Layers } from 'lucide-react';
 
-const REPO_URL = "https://github.com/yeahhe365/Dual-AI-Chat";
-const VERSION = "2.0.0";
+const REPO_URL = "https://github.com/zero456/dual-ai";
+const VERSION = "1.0.0";
 
 const AboutSettings: React.FC = () => {
   const [starCount, setStarCount] = useState<number | null>(null);
@@ -11,7 +11,7 @@ const AboutSettings: React.FC = () => {
   useEffect(() => {
     const fetchStars = async () => {
       try {
-        const response = await fetch('https://api.github.com/repos/yeahhe365/Dual-AI-Chat');
+        const response = await fetch('https://api.github.com/repos/zero456/dual-ai');
         if (response.ok) {
           const data = await response.json();
           setStarCount(data.stargazers_count);
@@ -41,7 +41,7 @@ const AboutSettings: React.FC = () => {
              </div>
          </div>
          
-         <h2 className="text-2xl font-bold text-slate-800 mb-2 relative z-10">Dual AI Chat</h2>
+         <h2 className="text-2xl font-bold text-slate-800 mb-2 relative z-10">Dual AI</h2>
          <p className="text-slate-500 mb-6 max-w-md relative z-10">
             一个基于 Google Gemini 的协作式 AI 聊天应用。Cognito (逻辑) 和 Muse (创意) 协同工作，为您提供最佳答案。
          </p>
@@ -71,7 +71,7 @@ const AboutSettings: React.FC = () => {
       </div>
       
       <div className="text-center text-xs text-slate-400 mt-4">
-         <p>Copyright © {new Date().getFullYear()} Dual AI Chat.</p>
+         <p>Copyright © {new Date().getFullYear()} Dual AI.</p>
       </div>
     </div>
   );

@@ -65,11 +65,11 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, onManualRetry, f
     const isError = isSystemErrorMessage(messageText, purpose);
     
     // Check for new structured welcome message or legacy message
-    const isWelcome = messageText.includes("Dual AI Chat 已就绪") || messageText.includes("欢迎使用Dual AI Chat");
+    const isWelcome = messageText.includes("Dual AI 已就绪") || messageText.includes("欢迎使用Dual AI");
 
     if (isWelcome) {
       // Parse structured text for the new layout
-      // Format: "Dual AI Chat 已就绪\n模式：[Info]\nCognito：[Name]\nMuse：[Name]"
+      // Format: "Dual AI 已就绪\n模式：[Info]\nCognito：[Name]\nMuse：[Name]"
       const lines = messageText.split('\n');
       
       // If matches new format with enough lines, render card
@@ -84,7 +84,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, onManualRetry, f
                     {/* Card Header */}
                     <div className="flex items-center gap-3 mb-5 pb-4 border-b border-slate-100">
                         <div>
-                            <h3 className="font-bold text-slate-800 text-base">Dual AI Chat 已就绪</h3>
+                            <h3 className="font-bold text-slate-800 text-base">Dual AI 已就绪</h3>
                             <p className="text-[10px] text-slate-500 font-medium">系统初始化完成</p>
                         </div>
                     </div>

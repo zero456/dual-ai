@@ -159,7 +159,7 @@ export const useAppController = (panelsContainerRef: React.RefObject<HTMLDivElem
 
   // Update Welcome Message on settings change
   useEffect(() => {
-    const welcomeMessage = messages.find(msg => msg.sender === MessageSender.System && msg.text.startsWith("Dual AI Chat 已就绪"));
+    const welcomeMessage = messages.find(msg => msg.sender === MessageSender.System && msg.text.startsWith("Dual AI 已就绪"));
     if (welcomeMessage && !apiKeyStatus.isMissing && !apiKeyStatus.isInvalid) {
       setMessages(msgs => msgs.map(msg =>
         msg.id === welcomeMessage.id

@@ -18,5 +18,5 @@ export const getWelcomeMessageText = (
   let museName = isOpenAiActive ? (openAiMuseModelId || '未指定') : museModelNameFromDetails;
 
   // Structured format for MessageBubble to parse: Title\nMode: Value\nCognito: Value\nMuse: Value
-  return `Dual AI Chat 已就绪\n模式：${modeInfo}\nCognito：${cognitoName}\nMuse：${museName}`;
+  return `Dual AI 已就绪\n模式：${modeInfo}\nCognito：${cognitoName}\nMuse：${museName}`;
 };

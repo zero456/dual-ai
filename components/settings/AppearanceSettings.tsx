@@ -65,7 +65,7 @@ const AppearanceSettings: React.FC<AppearanceSettingsProps> = ({
                    <div className="space-y-2">
                       <div className="h-4 w-24 bg-slate-200 rounded"></div>
                       <p className="text-slate-700 leading-relaxed">
-                        Dual AI Chat 界面可动态缩放。清晰易读对于跟踪 Cognito 和 Muse 之间的复杂讨论至关重要。
+                        Dual AI 界面可动态缩放。清晰易读对于跟踪 Cognito 和 Muse 之间的复杂讨论至关重要。
                       </p>
                    </div>
                 </div>

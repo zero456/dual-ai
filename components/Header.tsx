@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({
            <Layers size={20} className="md:w-[22px] md:h-[22px]" strokeWidth={2.5} />
         </div>
         <div>
-          <h1 className="text-lg md:text-xl font-bold text-slate-800 tracking-tight leading-tight">Dual AI Chat</h1>
+          <h1 className="text-lg md:text-xl font-bold text-slate-800 tracking-tight leading-tight">Dual AI</h1>
           <p className="text-[10px] text-slate-500 font-bold tracking-widest uppercase hidden sm:block">协作智能</p>
         </div>
       </div>
